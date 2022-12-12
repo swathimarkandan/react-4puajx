@@ -1,0 +1,72 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.inside {
+  width: 165px;
+  height: 175px;
+  margin: 0px;
+}
+.front {
+  width: 165px;
+  height: 175px;
+  margin: 0px;
+}
+.image-grid {
+  display: grid;
+  margin-top: 40px;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+}
+.image-container img {
+  display: block;
+  position: relative;
+}
+.image-container {
+  position: relative;
+}
+.App {
+  width: 830px;
+  display: center;
+  margin: 40px auto;
+}
+button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  width: 150px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: palevioletred;
+  color: white;
+}
+.image-container .inside {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+.flipp .inside {
+  transform: rotateY(0deg);
+
+  transition-delay: 0.2s;
+}
+
+.flipp .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+.image-container .front {
+  transition-delay: 0s;
+}
+.turn {
+  color: darkblue;
+  margin-left: 40%;
+  width: 165px;
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  padding-bottom: 7px;
+  border-bottom: 10px solid rgb(209, 20, 130);
+}
